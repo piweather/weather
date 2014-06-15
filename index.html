@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Weather - Home</title>
+<link href="css/weather.css" rel="stylesheet" type="text/css" />
+<link href="css/old_CSS.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="/img/favicon.ico" />
+<link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+<meta http-equiv="refresh" content="120">
+<link href="file:///C|/Local Data/Documents/Websites/piweather.github.io/css/old.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+<div id="wrapperNew">
+<div id="header">
+<div class="fade" id="HeaderImg"><a href="index.html"><img src="img/logo.png" width="129" height="80" /></div><span class="headertext">Weather</span></a>
+</div>
+<div id="content">
+<div id="Top_Navigation">
+<ul>
+<li><a href="index.html" class="OnPage">Current</a  ></li>
+<li><a href="temperature.html">Temperature</a></li>
+<li><a href="rainfall.html">Rainfall</a></li>
+<li><a href="wind.html">Wind</a></li>
+<li><a href="humidity.html">Humidity</a></li>
+<li><a href="barometer.html">Barometer</a></li>
+</ul>
+
+</div>
+<div id="current_weather">
+<!--
+<ul>
+<li><span class="font_size16">Time & Date</span><br /><?php echo date("h:i A",strtotime($row_current['board_time'])); ?>
+<p class="font12"><?php echo date("m/d/Y",strtotime($row_current['board_date'])); ?></p></li>
+<li><span class="font_size16">Den Temperature</span><br /><?php echo $row_current['board_temp']; ?>°
+<p class="font12">24 Hour High: <?php echo $row_min_max['board_temp_high']; ?>°</p>
+<p class="font12">24 Hour Low: <?php echo $row_min_max['board_temp_low']; ?>°</p>
+</li>
+<li><span class="font_size16">Outside Temperature</span><br /><?php echo $row_current['outside_temp']; ?>°<br />
+<p class="font12">24 Hour High: <?php echo $row_min_max['outside_temp_high']; ?>°</p>
+<p class="font12">24 Hour Low: <?php echo $row_min_max['outside_temp_low']; ?>°</p>
+</li>
+<li><span class="font_size16">Wind Speed</span><br /><?php echo $row_current['wind_speed']; ?><span class="font_size16"> mph</span>
+<p class="font12">24 Hour High: <?php echo $row_min_max['wind_speed_high']; ?> mph</p>
+</li>
+<li><span class="font_size16">Den Humidity</span><br /><?php echo $row_current['humidity']; ?><span class="font_size16">%</span>
+<p class="font12">24 Hour High: <?php echo $row_min_max['humidity_high']; ?>%</p>
+<p class="font12">24 Hour Low: <?php echo $row_min_max['humidity_low']; ?>%</p>
+</li>
+<li><span class="font_size16">Barometer</span><br /><?php echo $row_current['barometer']; ?><span class="font_size16"> in</span><br />
+<p class="font12">24 Hour High: <?php echo $row_min_max['barometer_high']; ?> in</p>
+<p class="font12">24 Hour Low: <?php echo $row_min_max['barometer_low']; ?> in</p>
+</li>
+<li><span class="font_size16">Wind Direction</span><br /><?php echo $row_current['Cardinal']; ?></li>
+<li><span class="font_size16">Rainfall <font size="-1">(Last Hour)</font></span><br />
+<?php echo $row_rainfalllasthour['cumulative_rainfall']; ?>"
+<p class="font12">24 Hour Total: "</p>
+</li>
+</ul>
+<?php } while ($row_current = mysql_fetch_assoc($current)); ?>
+-->
+</div>
+</div>
+<br />
+<div class="fade" id="footer"><br />&copy; <script language="javascript" type="text/javascript">
+var today = new Date()
+var year = today.getFullYear()
+document.write(year)
+</script> Nathan Haveman<br /><br />
+<br />
+<div id="images">
+<!--<div id="github">
+<a href="https://github.com/"><img class="bottom" src="img/GitHub_Color.png"  width="32" height="32" /></a>
+<a href="https://github.com/"><img src="img/GitHub_White.png" width="32" height="32" class="top" /></a> -->
+</div>
+</div>
+</div> 
+</div>
+</div>
+</div>
+</body>
+</html>
