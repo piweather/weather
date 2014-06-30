@@ -1,6 +1,22 @@
 html {
 	overflow-y: scroll; 
 }
+.Chart_Image {
+margin-top: 15px;
+margin-right: auto;
+
+margin-left: auto;
+position: relative;
+width: 940px;
+/* [disabled]background-color: #666; */
+/* [disabled]height: 476px; */
+/* [disabled]float: left; */
+display: block;
+border-top-width: 0px;
+border-right-width: 0px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+}
 #current_weather {
 float: left;
 width: 950px;
@@ -10,24 +26,8 @@ font-family: Monda, sans-serif;
 font-weight: normal;
 padding-top: 5px;
 padding-right: 7px;
-padding-bottom: 7px;
+/* [disabled]padding-bottom: 7px; */
 padding-left: 7px;
-}
-.Chart_Image {
-margin-top: 15px;
-margin-right: auto;
-margin-bottom: 15px;
-margin-left: auto;
-position: relative;
-width: 897px;
-/* [disabled]background-color: #666; */
-/* [disabled]height: 476px; */
-/* [disabled]float: left; */
-display: block;
-border-top-width: 0px;
-border-right-width: 0px;
-border-bottom-width: 0px;
-border-left-width: 0px;
 }
 
 
@@ -237,10 +237,12 @@ background-repeat: repeat;
 position: relative;
 /* [disabled]background-image: url(../img/backround_light.jpg); */
 margin: 5px;
-padding: 5px;
 font-family: Monda, sans-serif;
 color: #999;
 font-size: 16px;
+/* [disabled]background-color: #0F0; */
+padding-top: 5px;
+/* [disabled]padding-bottom: 5px; */
 }
 #overflow { overflow: hidden; }
 
@@ -276,7 +278,7 @@ border-top-width: thin;
 border-top-style: solid;
 border-top-color: #333;
 text-align: center;
-color: #999;
+color: #666;
 font-size: 12px;
 }
 .fade a:hover{ color: #C90900; }
@@ -1717,3 +1719,14 @@ margin-right: auto;
 margin-left: auto;
 background-color: #666;
 }
+#FooterNav { color: #666; }
+#FooterNav a { color: #666; 
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;}
+#FooterNav a:hover { color: #999; 
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;}
